@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
             //Se instancia la clase Empleado
             Empleado employee = new Empleado("Alberto", 23, "angeljhsperegrino@gmail.com");
 
+            //Se convierte el Gson en Json
+            String json = gson.toJson(employee);
+
 
 
     }
