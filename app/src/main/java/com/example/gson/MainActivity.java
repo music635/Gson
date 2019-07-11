@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
             String json = "{\"firstName\" : \"Alberto\", \"age\" :30, \"email\" : \"angeljhsperegrino@gmail.com\"}";
 
+            //se instancia la clase Empleado y se transforma a Json
+            Empleado empleado = gson.fromJson(json, Empleado.class);
+
 
 
     }
