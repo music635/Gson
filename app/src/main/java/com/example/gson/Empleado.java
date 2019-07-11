@@ -1,14 +1,20 @@
 package com.example.gson;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Empleado {
 
-    private String firstName;
-    private int age;
-    private String email;
+    @SerializedName("first_name")
+    private String mFirstName;
+    @SerializedName("age")
+    private int mAge;
+    @SerializedName("email")
+    private String mEmail;
 
     public Empleado(String firstName, int age, String email) {
-        this.firstName = firstName;
-        this.age = age;
-        this.email = email;
+
+        mFirstName = firstName;
+        mAge = age;
+        mEmail = email;
     }
 }
