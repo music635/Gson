@@ -13,7 +13,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+            //Se instancia la clase Gson
             Gson gson = new Gson();
+
+            //Se instancia la clase Empleado
+            Empleado employee = new Empleado("Alberto", 23, "angeljhsperegrino@gmail.com");
+
 
 
     }
