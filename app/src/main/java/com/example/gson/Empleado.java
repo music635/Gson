@@ -10,11 +10,14 @@ public class Empleado {
     private int mAge;
     @SerializedName("email")
     private String mEmail;
+    @SerializedName("adress")
+    private Adress mAdress;
 
-    public Empleado(String firstName, int age, String email) {
+    public Empleado(String firstName, int age, String email, Adress adress) {
 
         mFirstName = firstName;
         mAge = age;
         mEmail = email;
+        mAdress = adress;
     }
 }
