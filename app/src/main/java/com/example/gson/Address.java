@@ -2,7 +2,7 @@ package com.example.gson;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Adress {
+public class Address {
 
     //Variables
     @SerializedName("country")
@@ -11,7 +11,7 @@ public class Adress {
     private String mCity;
 
     //Constructor
-    public Adress(String mCountry, String mCity) {
+    public Address(String mCountry, String mCity) {
 
         mCountry = mCountry;
         mCity = mCity;
