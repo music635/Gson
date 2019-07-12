@@ -3,8 +3,17 @@
       "city": "Villahermosa",
       "country": "Mexico"
     },
-
   "age" : 23,
+  "family": [
+    {
+      "age": 47,
+      "role": "Mom"
+    },
+    {
+      "age": 19,
+      "role": "Sister"
+    }
+  ],
   "first_name" : "Alberto",
   "email" : "angeljhsperegrino@gmail.com"
 
