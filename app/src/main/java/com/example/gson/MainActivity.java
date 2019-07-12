@@ -5,6 +5,11 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
             */
 
 
-            String json =  [{"role":"Mom","age":47},{"role":"Sister","age":19}]
+            String json =  "[{\"role\" : \"Mom\" , \"age\" :47},{\"role\" : \"Sister\" , \"age\" :19}]";
+            Type familyType = new TypeToken<ArrayList<FamilyMember>>(){}.getType();
+            ArrayList<FamilyMember> family = gson.fromJson(json, familyType);
 
             //se instancia la clase Empleado y se transforma a Json
             Empleado empleado = gson.fromJson(json, Empleado.class);
